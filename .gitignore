@@ -1,0 +1,11 @@
+node_modules
+.env
+dist
+package-lock.json
+yarn.lock
+
+/winston
+/uploads
+
+# editor
+.vscode
