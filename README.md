@@ -71,22 +71,30 @@ Ensure you have the following installed:
 
    ```env
    # Basic
+   SERVER_NAME=tax-software
    NODE_ENV=development
-   DATABASE_URL=mongodb://127.0.0.1:27017/project_name
-   IP_ADDRESS=192.0.0.0
+   DATABASE_URL=mongodb://127.0.0.1:27017/tax-software
+   IP_ADDRESS=10.10.7.7
    PORT=5000
+   PORT_DEV=5001
+
+   # Super Admin credentials
+   SUPER_ADMIN_EMAIL=super.admin@gmail.com
+   SUPER_ADMIN_PASSWORD=12345678
 
    # Bcrypt
    BCRYPT_SALT_ROUNDS=12
 
    # JWT
    JWT_SECRET=jwt_secret
-   JWT_EXPIRE_IN=1d
+   JWT_EXPIRE_IN=30d
+   JWT_REFRESH_SECRET=jwt_refresh_secret
+   JWT_REFRESH_EXPIRES_IN=365d
 
-   # Email
-   EMAIL_FROM=email@gmail.com
-   EMAIL_USER=email@gmail.com
-   EMAIL_PASS=mkqcfjeqloothyax
+   #SMTP Node Mailer
+   EMAIL_FROM="email@gmail.com"
+   EMAIL_USER="email@gmail.com"
+   EMAIL_PASS="lbkx ntqp ulzi jssx"
    EMAIL_PORT=587
    EMAIL_HOST=smtp.gmail.com
    ```
